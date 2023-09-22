@@ -161,10 +161,12 @@
 		],
 		"parameters": {
 			"student_id": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 1201
 			},
 			"student_name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "sri"
 			},
 			"age": {
 				"type": "int"
