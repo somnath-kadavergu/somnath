@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"dbo": {
-					"value": "@dataset().tablename",
+					"value": "@dataset().dbofromdataset",
 					"type": "Expression"
 				}
 			}
@@ -14,6 +14,9 @@
 		"parameters": {
 			"tablename": {
 				"type": "string"
+			},
+			"dbofromdataset": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
