@@ -15,13 +15,16 @@
 				"defaultValue": "@pipeline().parameters.student_name"
 			},
 			"Age": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": "@pipeline().parameters.age"
 			},
 			"Location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.location"
 			},
 			"Stream": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.stream"
 			}
 		},
 		"annotations": [],
