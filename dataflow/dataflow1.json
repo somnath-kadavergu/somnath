@@ -16,9 +16,9 @@
 			"transformations": [],
 			"scriptLines": [
 				"source(output(",
-				"          Student_Id as string,",
+				"          Student_Id as integer,",
 				"          Student_Name as string,",
-				"          Age as string,",
+				"          Age as integer,",
 				"          Location as string,",
 				"          Stream as string",
 				"     ),",
