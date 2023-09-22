@@ -51,7 +51,7 @@
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
 				"union1 aggregate(groupBy(Student_Id),",
-				"     each(match(ERROR_FUNCTION('name !==Student_Id')), ERROR_FUNCTION('') = ERROR_FUNCTION(''))) ~> aggregate1"
+				"     each(match(ERROR_FUNCTION('name !==__SINGLE_QUOTE__Student_Id__SINGLE_QUOTE__')), ERROR_FUNCTION('') = ERROR_FUNCTION(''))) ~> aggregate1"
 			]
 		}
 	}
