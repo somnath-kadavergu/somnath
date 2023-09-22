@@ -51,7 +51,7 @@
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
 				"union1 aggregate(groupBy(Student_Id),",
-				"     Student_Id = distinct(Student_Id)) ~> aggregate1"
+				"     Student_Id = count(student_id)) ~> aggregate1"
 			]
 		}
 	}
