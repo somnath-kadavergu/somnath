@@ -121,7 +121,29 @@
 				"inputs": [
 					{
 						"referenceName": "ds_input_student",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Student_Id": {
+								"value": "@pipeline().parameters.student_id",
+								"type": "Expression"
+							},
+							"Student_Name": {
+								"value": "@pipeline().parameters.student_name",
+								"type": "Expression"
+							},
+							"Age": {
+								"value": "@pipeline().parameters.age",
+								"type": "Expression"
+							},
+							"Location": {
+								"value": "@pipeline().parameters.location",
+								"type": "Expression"
+							},
+							"Stream": {
+								"value": "@pipeline().parameters.stream",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
