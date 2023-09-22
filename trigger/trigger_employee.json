@@ -2,7 +2,9 @@
 	"name": "trigger_employee",
 	"properties": {
 		"description": "schedule trigger",
-		"annotations": [],
+		"annotations": [
+			"schedule trigger"
+		],
 		"runtimeState": "Started",
 		"pipelines": [
 			{
@@ -17,8 +19,8 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 15,
-				"startTime": "2023-09-22T13:45:00",
-				"endTime": "2023-09-23T08:14:10",
+				"startTime": "2023-09-22T13:55:00",
+				"endTime": "2023-09-21T02:15:00",
 				"timeZone": "India Standard Time"
 			}
 		}
