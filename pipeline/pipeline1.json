@@ -15,6 +15,19 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow1",
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"source1": {
+								"Student_Id": 1201,
+								"Student_Name": "e",
+								"Age": 19,
+								"Location": "nn",
+								"Stream": "it"
+							}
+						}
+					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
