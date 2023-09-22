@@ -7,23 +7,19 @@
 		},
 		"parameters": {
 			"Student_Id": {
-				"type": "int",
-				"defaultValue": 1201
+				"type": "int"
 			},
 			"Student_Name": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.student_name"
+				"type": "string"
 			},
 			"Age": {
 				"type": "int"
 			},
 			"Location": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.location"
+				"type": "string"
 			},
 			"Stream": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.stream"
+				"type": "string"
 			}
 		},
 		"annotations": [],
