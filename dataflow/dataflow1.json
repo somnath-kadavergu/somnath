@@ -25,7 +25,7 @@
 					"name": "union1"
 				},
 				{
-					"name": "filter1"
+					"name": "aggregate1"
 				}
 			],
 			"scriptLines": [
@@ -50,7 +50,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"union1 filter(isDistinct(Student_Id)) ~> filter1"
+				"union1 aggregate() ~> aggregate1"
 			]
 		}
 	}
