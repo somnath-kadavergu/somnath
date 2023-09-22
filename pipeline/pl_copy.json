@@ -1,7 +1,7 @@
 {
 	"name": "pl_copy",
 	"properties": {
-		"description": "merge two tables ",
+		"description": "merge_two_tables ",
 		"activities": [
 			{
 				"name": "Copydata",
