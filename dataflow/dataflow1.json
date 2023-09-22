@@ -25,10 +25,7 @@
 					"name": "union1"
 				},
 				{
-					"name": "filter1"
-				},
-				{
-					"name": "window1"
+					"name": "aggregate1"
 				}
 			],
 			"scriptLines": [
@@ -53,13 +50,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"window1 filter(ERROR_FUNCTION('')) ~> filter1",
-				"union1 window(over(Student_Id,",
-				"          Student_Name,",
-				"          Age,",
-				"          Location,",
-				"          Stream,",
-				"          {} = ERROR_FUNCTION(''))) ~> window1"
+				"union1 aggregate(groupBy(Student_Id)) ~> aggregate1"
 			]
 		}
 	}
