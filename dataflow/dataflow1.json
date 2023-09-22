@@ -66,6 +66,7 @@
 				"     each(match(name!='Student_Id'), $$ = first($$))) ~> aggregatedRemoveDuplicate",
 				"aggregatedRemoveDuplicate sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     partitionFileNames:['DeduplicatedMergedData'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
