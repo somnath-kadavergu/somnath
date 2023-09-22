@@ -29,6 +29,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [
+					{
+						"name": "",
+						"value": ""
+					}
+				],
 				"typeProperties": {
 					"storedProcedureName": "parameters"
 				},
