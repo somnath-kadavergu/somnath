@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "copysource todestination",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -68,33 +68,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Stored procedure1",
-				"type": "SqlServerStoredProcedure",
-				"dependsOn": [
-					{
-						"activity": "Copy data1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"typeProperties": {
-					"storedProcedureName": "cpdata",
-					"storedProcedureParameters": {
-						"emp_id": {
-							"value": ""
-						}
-					}
-				}
 			}
 		],
 		"parameters": {
