@@ -75,6 +75,9 @@
 			},
 			"dbNamefromPipeline": {
 				"type": "string"
+			},
+			"targetdataFromPipeline": {
+				"type": "string"
 			}
 		},
 		"annotations": []
