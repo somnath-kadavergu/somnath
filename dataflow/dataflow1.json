@@ -23,6 +23,9 @@
 			"transformations": [
 				{
 					"name": "union1"
+				},
+				{
+					"name": "filter1"
 				}
 			],
 			"scriptLines": [
@@ -46,7 +49,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
-				"source1, source2 union(byName: true)~> union1"
+				"source1, source2 union(byName: true)~> union1",
+				"union1 filter(ERROR_FUNCTION('')) ~> filter1"
 			]
 		}
 	}
