@@ -50,7 +50,14 @@
 				"inputs": [
 					{
 						"referenceName": "ds_input_student",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Student_Id": 1201,
+							"Student_Name": "@pipeline().parameters.student_name",
+							"Age": "@pipeline().parameters.age",
+							"Location": "@pipeline().parameters.location",
+							"Stream": "@pipeline().parameters.stream"
+						}
 					}
 				],
 				"outputs": [
