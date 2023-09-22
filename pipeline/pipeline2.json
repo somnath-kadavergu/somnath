@@ -29,16 +29,6 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"typeProperties": {
-					"storedProcedureName": {
-						"value": "@pipeline().DataFactory",
-						"type": "Expression"
-					},
-					"storedProcedureParameters": {
-						"value": "@pipeline().DataFactory",
-						"type": "Expression"
-					}
-				},
 				"linkedServiceName": {
 					"referenceName": "SqlServer1",
 					"type": "LinkedServiceReference"
