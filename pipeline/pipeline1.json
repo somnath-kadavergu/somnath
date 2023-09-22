@@ -44,7 +44,10 @@
 								"value": "@pipeline().parameters.tableNamefromPipeline",
 								"type": "Expression"
 							},
-							"dbofromdataset": "testdb"
+							"dbofromdataset": {
+								"value": "@pipeline().parameters.dbNamefromPipeline",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -53,8 +56,14 @@
 						"referenceName": "dataset_sqltable",
 						"type": "DatasetReference",
 						"parameters": {
-							"tablename": "table2",
-							"dbofromdataset": "testdb"
+							"tablename": {
+								"value": "@pipeline().parameters.dbNamefromPipeline",
+								"type": "Expression"
+							},
+							"dbofromdataset": {
+								"value": "@pipeline().parameters.tableNamefromPipeline",
+								"type": "Expression"
+							}
 						}
 					}
 				]
