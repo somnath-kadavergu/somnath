@@ -55,7 +55,10 @@
 				"source1, source2 union(byName: true)~> union1",
 				"window1 filter(ERROR_FUNCTION('')) ~> filter1",
 				"union1 window(over(Student_Id,",
-				"          {} = ERROR_FUNCTION(''))) ~> window1"
+				"          Student_Name,",
+				"          Age,",
+				"          Location,",
+				"          Stream)) ~> window1"
 			]
 		}
 	}
