@@ -19,13 +19,25 @@
 					"name": "source2"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "deduplicatedMergedData",
+						"type": "DatasetReference"
+					},
+					"name": "deduplicatedMergedata",
+					"rejectedDataLinkedService": {
+						"referenceName": "AzureDataLakeStorage",
+						"type": "LinkedServiceReference"
+					}
+				}
+			],
 			"transformations": [
 				{
 					"name": "union1"
 				},
 				{
-					"name": "aggregate1"
+					"name": "aggregatedRemoveDuplicate"
 				}
 			],
 			"scriptLines": [
@@ -51,7 +63,14 @@
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
 				"union1 aggregate(groupBy(Student_Id),",
-				"     each(match(name !='Student_Id'), $$ = first($$))) ~> aggregate1"
+				"     each(match(name !='Student_Id'), $$ = first($$))) ~> aggregatedRemoveDuplicate",
+				"aggregatedRemoveDuplicate sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> deduplicatedMergedata"
 			]
 		}
 	}
