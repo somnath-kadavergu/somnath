@@ -25,6 +25,13 @@
 								"Age": 19,
 								"Location": "nn",
 								"Stream": "it"
+							},
+							"deduplicatedMergedata": {
+								"Student_Id": 1201,
+								"Student_Name": "lax",
+								"Age": 25,
+								"Location": "lb nager",
+								"Stream": "IT"
 							}
 						}
 					},
