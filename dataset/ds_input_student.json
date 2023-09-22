@@ -7,10 +7,12 @@
 		},
 		"parameters": {
 			"Student_Id": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": "@pipeline().parameters.student_id"
 			},
 			"Student_Name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.student_name"
 			},
 			"Age": {
 				"type": "int"
