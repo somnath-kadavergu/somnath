@@ -7,13 +7,13 @@
 		},
 		"parameters": {
 			"Student_Id": {
-				"type": "string"
+				"type": "int"
 			},
 			"Student_Name": {
 				"type": "string"
 			},
 			"Age": {
-				"type": "string"
+				"type": "int"
 			},
 			"Location": {
 				"type": "string"
