@@ -50,8 +50,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"union1 aggregate(groupBy(Student_Id,",
-				"          Student_Name),",
+				"union1 aggregate(groupBy(Student_Id),",
 				"     column1 = ERROR_FUNCTION(''),",
 				"          each(match(name!='Student_id'), $$ = first($$))) ~> aggregate1"
 			]
