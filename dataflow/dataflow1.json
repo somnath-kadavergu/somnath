@@ -58,7 +58,8 @@
 				"          Student_Name,",
 				"          Age,",
 				"          Location,",
-				"          Stream)) ~> window1"
+				"          Stream,",
+				"          {} = ERROR_FUNCTION(''))) ~> window1"
 			]
 		}
 	}
