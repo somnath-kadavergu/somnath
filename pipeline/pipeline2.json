@@ -72,7 +72,14 @@
 			{
 				"name": "Stored procedure1",
 				"type": "SqlServerStoredProcedure",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -81,11 +88,7 @@
 					"secureInput": false
 				},
 				"typeProperties": {
-					"storedProcedureName": "parameters"
-				},
-				"linkedServiceName": {
-					"referenceName": "SqlServer1",
-					"type": "LinkedServiceReference"
+					"storedProcedureName": "cpdata"
 				}
 			}
 		],
