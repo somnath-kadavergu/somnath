@@ -47,19 +47,30 @@
 						}
 					},
 					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "AzureBlobStorage",
+							"type": "LinkedServiceReference"
+						}
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
 							{
 								"source": {
 									"name": "Student_Id",
-									"type": "Int16",
+									"type": "Int32",
 									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Student_Id",
 									"type": "String",
 									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Student_Id"
 								}
 							},
 							{
@@ -77,7 +88,7 @@
 							{
 								"source": {
 									"name": "Age",
-									"type": "Int16",
+									"type": "Int32",
 									"physicalType": "String"
 								},
 								"sink": {
