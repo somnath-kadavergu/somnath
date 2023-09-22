@@ -26,6 +26,9 @@
 				},
 				{
 					"name": "filter1"
+				},
+				{
+					"name": "window1"
 				}
 			],
 			"scriptLines": [
@@ -50,7 +53,9 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"union1 filter(ERROR_FUNCTION('')) ~> filter1"
+				"window1 filter(ERROR_FUNCTION('')) ~> filter1",
+				"union1 window(over(Student_Id,",
+				"          {} = ERROR_FUNCTION(''))) ~> window1"
 			]
 		}
 	}
