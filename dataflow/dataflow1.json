@@ -46,15 +46,15 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
-				"source1 select(mapColumn(",
+				"source2 select(mapColumn(",
 				"          Student_Id,",
 				"          Student_Name,",
 				"          Age,",
 				"          Location,",
 				"          Stream",
 				"     ),",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1"
+				"     skipDuplicateMapInputs: false,",
+				"     skipDuplicateMapOutputs: false) ~> select1"
 			]
 		}
 	}
