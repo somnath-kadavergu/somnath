@@ -50,7 +50,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"union1 filter(ERROR_FUNCTION('')) ~> filter1"
+				"union1 filter(isDistinct(Student_Id)) ~> filter1"
 			]
 		}
 	}
