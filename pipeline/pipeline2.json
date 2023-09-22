@@ -88,7 +88,12 @@
 					"secureInput": false
 				},
 				"typeProperties": {
-					"storedProcedureName": "cpdata"
+					"storedProcedureName": "cpdata",
+					"storedProcedureParameters": {
+						"emp_id": {
+							"value": ""
+						}
+					}
 				}
 			}
 		],
