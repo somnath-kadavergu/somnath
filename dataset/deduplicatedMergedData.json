@@ -15,13 +15,16 @@
 				"defaultValue": "lax"
 			},
 			"Age": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 25
 			},
 			"Location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "lb nager"
 			},
 			"Stream": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "IT"
 			}
 		},
 		"annotations": [],
