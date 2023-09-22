@@ -20,7 +20,20 @@
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
 					{
@@ -28,6 +41,16 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"tablename": "table1",
+							"dbofromdataset": "testdb"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dataset_sqltable",
+						"type": "DatasetReference",
+						"parameters": {
+							"tablename": "table2",
 							"dbofromdataset": "testdb"
 						}
 					}
