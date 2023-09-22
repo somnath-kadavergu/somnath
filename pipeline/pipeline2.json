@@ -71,7 +71,19 @@
 			}
 		],
 		"parameters": {
-			"name": {
+			"student_id": {
+				"type": "int"
+			},
+			"student_name": {
+				"type": "string"
+			},
+			"age": {
+				"type": "string"
+			},
+			"location": {
+				"type": "string"
+			},
+			"stream": {
 				"type": "string"
 			}
 		},
