@@ -1,5 +1,5 @@
 {
-	"name": "ds_input_student",
+	"name": "ds_output_student",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage",
@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "Student.csv",
-				"folderPath": "input",
+				"folderPath": "output",
 				"container": "adfdemo"
 			},
 			"columnDelimiter": ",",
@@ -19,27 +19,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "Student_Id",
-				"type": "String"
-			},
-			{
-				"name": "Student_Name",
-				"type": "String"
-			},
-			{
-				"name": "Age",
-				"type": "String"
-			},
-			{
-				"name": "Location",
-				"type": "String"
-			},
-			{
-				"name": "Stream",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
