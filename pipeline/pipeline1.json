@@ -16,22 +16,20 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "employee",
-						"type": "DatasetReference"
+						"referenceName": "dataset_sqltable",
+						"type": "DatasetReference",
+						"parameters": {
+							"tablename": "table1",
+							"dbofromdataset": "testdb"
+						}
 					}
 				]
 			}
