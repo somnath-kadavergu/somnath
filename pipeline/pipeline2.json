@@ -59,18 +59,12 @@
 							{
 								"source": {
 									"name": "Student_Id",
-									"type": "Int32",
-									"physicalType": "String"
+									"type": "Int64"
 								},
 								"sink": {
 									"name": "Student_Id",
 									"type": "String",
 									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "Student_Id"
 								}
 							},
 							{
@@ -88,7 +82,7 @@
 							{
 								"source": {
 									"name": "Age",
-									"type": "Int32",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {

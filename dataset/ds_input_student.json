@@ -8,7 +8,7 @@
 		"parameters": {
 			"Student_Id": {
 				"type": "int",
-				"defaultValue": "@pipeline().parameters.student_id"
+				"defaultValue": "@pipeline().parameters.student_id.int"
 			},
 			"Student_Name": {
 				"type": "string",
