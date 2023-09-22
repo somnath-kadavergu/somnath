@@ -30,10 +30,7 @@
 					"secureInput": false
 				},
 				"typeProperties": {
-					"storedProcedureName": {
-						"value": "@pipeline().DataFactory",
-						"type": "Expression"
-					}
+					"storedProcedureName": "parameters"
 				},
 				"linkedServiceName": {
 					"referenceName": "SqlServer1",
@@ -41,6 +38,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"name": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
