@@ -51,8 +51,7 @@
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
 				"union1 aggregate(groupBy(student_id = Student_Id),",
-				"     Student_Id = count(),",
-				"          each(match(), ERROR_FUNCTION('') = ERROR_FUNCTION(''))) ~> aggregate1"
+				"     Student_Id = count()) ~> aggregate1"
 			]
 		}
 	}
