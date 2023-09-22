@@ -40,7 +40,10 @@
 						"referenceName": "dataset_sqltable",
 						"type": "DatasetReference",
 						"parameters": {
-							"tablename": "table1",
+							"tablename": {
+								"value": "@pipeline().parameters.tableNamefromPipeline",
+								"type": "Expression"
+							},
 							"dbofromdataset": "testdb"
 						}
 					}
@@ -61,7 +64,7 @@
 			"tableNamefromPipeline": {
 				"type": "string"
 			},
-			"dbNamefromPil": {
+			"dbNamefromPipeline": {
 				"type": "string"
 			}
 		},
