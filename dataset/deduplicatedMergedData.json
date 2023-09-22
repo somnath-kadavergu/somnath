@@ -5,6 +5,23 @@
 			"referenceName": "AzureDataLakeStorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Student_Id": {
+				"type": "int"
+			},
+			"Student_Name": {
+				"type": "string"
+			},
+			"Age": {
+				"type": "int"
+			},
+			"Location": {
+				"type": "string"
+			},
+			"Stream": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
