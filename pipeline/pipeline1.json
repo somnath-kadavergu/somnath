@@ -41,7 +41,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"tablename": {
-								"value": "@pipeline().parameters.tableNamefromPipeline",
+								"value": "@pipeline().parameters.sourcedatafromPipeline",
 								"type": "Expression"
 							},
 							"dbofromdataset": {
@@ -61,7 +61,7 @@
 								"type": "Expression"
 							},
 							"dbofromdataset": {
-								"value": "@pipeline().parameters.tableNamefromPipeline",
+								"value": "@pipeline().parameters.dbNamefromPipeline",
 								"type": "Expression"
 							}
 						}
