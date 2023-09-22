@@ -71,8 +71,7 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true,",
-				"     partitionBy('hash', 1)) ~> deduplicatedMergedata"
+				"     skipDuplicateMapOutputs: true) ~> deduplicatedMergedata"
 			]
 		}
 	}
