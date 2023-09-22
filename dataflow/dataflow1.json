@@ -25,7 +25,7 @@
 					"name": "union1"
 				},
 				{
-					"name": "aggregate1"
+					"name": "window1"
 				}
 			],
 			"scriptLines": [
@@ -50,8 +50,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"union1 aggregate(groupBy(student_id = Student_Id),",
-				"     Student_Id = collectUnique()) ~> aggregate1"
+				"union1 window(over(Student_Id)) ~> window1"
 			]
 		}
 	}
