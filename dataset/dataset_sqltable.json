@@ -1,5 +1,5 @@
 {
-	"name": "SqlServerTable1",
+	"name": "dataset_sqltable",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SqlServer1",
