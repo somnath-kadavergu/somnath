@@ -8,15 +8,14 @@
 		"parameters": {
 			"Student_Id": {
 				"type": "int",
-				"defaultValue": "@pipeline().parameters.student_id.int"
+				"defaultValue": 1201
 			},
 			"Student_Name": {
 				"type": "string",
 				"defaultValue": "@pipeline().parameters.student_name"
 			},
 			"Age": {
-				"type": "int",
-				"defaultValue": "@pipeline().parameters.age"
+				"type": "int"
 			},
 			"Location": {
 				"type": "string",
