@@ -22,7 +22,7 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "select1"
+					"name": "union1"
 				}
 			],
 			"scriptLines": [
@@ -46,15 +46,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
-				"source2 select(mapColumn(",
-				"          Student_Id,",
-				"          Student_Name,",
-				"          Age,",
-				"          Location,",
-				"          Stream",
-				"     ),",
-				"     skipDuplicateMapInputs: false,",
-				"     skipDuplicateMapOutputs: false) ~> select1"
+				"source1, source2 union(byName: true)~> union1"
 			]
 		}
 	}
