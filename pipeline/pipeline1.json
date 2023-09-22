@@ -20,7 +20,7 @@
 					},
 					{
 						"name": "Destination",
-						"value": "//"
+						"value": "employee/output/employee.csv"
 					}
 				],
 				"typeProperties": {
