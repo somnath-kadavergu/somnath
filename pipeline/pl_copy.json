@@ -38,7 +38,7 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": true,
+					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
