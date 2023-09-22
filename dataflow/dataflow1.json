@@ -63,7 +63,7 @@
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
 				"union1 aggregate(groupBy(Student_Id),",
-				"     each(match(name !='Student_Id'), $$ = first($$))) ~> aggregatedRemoveDuplicate",
+				"     each(match(name!='Student_Id'), $$ = first($$))) ~> aggregatedRemoveDuplicate",
 				"aggregatedRemoveDuplicate sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     umask: 0022,",
