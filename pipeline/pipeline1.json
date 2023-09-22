@@ -27,7 +27,7 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
+							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
@@ -132,7 +132,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "employee",
+						"referenceName": "ds_employ",
 						"type": "DatasetReference"
 					}
 				],
