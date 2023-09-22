@@ -3,7 +3,13 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SqlServer1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"dbo": {
+					"value": "@dataset().tablename",
+					"type": "Expression"
+				}
+			}
 		},
 		"parameters": {
 			"tablename": {
