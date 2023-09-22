@@ -50,7 +50,8 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source2",
 				"source1, source2 union(byName: true)~> union1",
-				"union1 aggregate(each(match(name!='Student_id'), $$ = ($$))) ~> aggregate1"
+				"union1 aggregate(groupBy(Student_Id),",
+				"     each(match(name!='Student_id'), $$ = ($$))) ~> aggregate1"
 			]
 		}
 	}
