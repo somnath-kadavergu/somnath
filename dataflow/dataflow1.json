@@ -12,11 +12,19 @@
 					"name": "source1"
 				},
 				{
+					"dataset": {
+						"referenceName": "ds_output_student",
+						"type": "DatasetReference"
+					},
 					"name": "source2"
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "select1"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          Student_Id as integer,",
@@ -28,8 +36,25 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source2"
+				"source(output(",
+				"          Student_Id as string,",
+				"          Student_Name as string,",
+				"          Age as string,",
+				"          Location as string,",
+				"          Stream as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source2",
+				"source1 select(mapColumn(",
+				"          Student_Id,",
+				"          Student_Name,",
+				"          Age,",
+				"          Location,",
+				"          Stream",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1"
 			]
 		}
 	}
