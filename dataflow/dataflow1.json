@@ -52,7 +52,7 @@
 				"source1, source2 union(byName: true)~> union1",
 				"union1 aggregate(groupBy(student_id = Student_Id),",
 				"     Student_Id = count(),",
-				"          column1 = ERROR_FUNCTION('')) ~> aggregate1"
+				"          collect = collectUnique(student_id)) ~> aggregate1"
 			]
 		}
 	}
