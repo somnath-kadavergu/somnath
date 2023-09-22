@@ -7,19 +7,24 @@
 		},
 		"parameters": {
 			"Student_Id": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 1201
 			},
 			"Student_Name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "e"
 			},
 			"Age": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 19
 			},
 			"Location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "nn"
 			},
 			"Stream": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "it"
 			}
 		},
 		"annotations": [],
