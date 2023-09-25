@@ -3,7 +3,8 @@
 	"properties": {
 		"parameters": {
 			"outputfolder": {
-				"type": "string"
+				"type": "array",
+				"defaultValue": "output1,output2,output2"
 			}
 		},
 		"annotations": []
