@@ -8,6 +8,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('pl_foreach_activty ').output",
+						"type": "Expression"
+					},
 					"isSequential": true,
 					"activities": [
 						{
@@ -87,8 +91,7 @@
 		],
 		"parameters": {
 			"outputfolders": {
-				"type": "array",
-				"defaultValue": "[output1,output2,output2]"
+				"type": "array"
 			}
 		},
 		"annotations": []
