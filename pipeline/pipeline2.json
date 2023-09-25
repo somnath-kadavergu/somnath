@@ -75,7 +75,13 @@
 							"outputs": [
 								{
 									"referenceName": "ds_output",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"outputfolder": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
