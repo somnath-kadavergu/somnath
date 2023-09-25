@@ -7,7 +7,7 @@
 		},
 		"parameters": {
 			"outputfolders": {
-				"type": "array"
+				"type": "string"
 			}
 		},
 		"annotations": [],
