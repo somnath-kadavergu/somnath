@@ -77,7 +77,7 @@
 									"referenceName": "ds_output",
 									"type": "DatasetReference",
 									"parameters": {
-										"outputfolder": {
+										"outputfolders": {
 											"value": "@item()",
 											"type": "Expression"
 										}
@@ -90,7 +90,7 @@
 			}
 		],
 		"parameters": {
-			"outputfolder": {
+			"outputfolders": {
 				"type": "array",
 				"defaultValue": "[output1,output2,output2]"
 			}

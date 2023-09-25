@@ -6,8 +6,8 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"outputfolder": {
-				"type": "String"
+			"outputfolders": {
+				"type": "array"
 			}
 		},
 		"annotations": [],
@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@dataset().outputfolder",
+					"value": "@dataset().outputfolders",
 					"type": "Expression"
 				},
 				"fileSystem": "adfdemo"
